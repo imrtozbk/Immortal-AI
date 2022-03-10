@@ -1,5 +1,5 @@
 # Immortal-AI
 yapay zeka makale yazıcı
 
-pip install gerekli.txt
+pip install -r gerekli.txt
 python app.py
