@@ -11,7 +11,7 @@ def generateBlogTopics(prompt1):
       engine="davinci-instruct-beta-v3",
       prompt="Generate blog topics on: {}. \n \n 1.  ".format(prompt1),
       temperature=0.7,
-      max_tokens=100,
+      max_tokens=600,
       top_p=1,
       frequency_penalty=0,
       presence_penalty=0
@@ -24,7 +24,7 @@ def generateBlogSections(prompt1):
       engine="davinci-instruct-beta-v3",
       prompt="Expand the blog title in to high level blog sections: {} \n\n- Introduction: ".format(prompt1),
       temperature=0.6,
-      max_tokens=100,
+      max_tokens=600,
       top_p=1,
       frequency_penalty=0,
       presence_penalty=0
@@ -38,7 +38,7 @@ def blogSectionExpander(prompt1):
       engine="davinci-instruct-beta-v3",
       prompt="Expand the blog section in to a detailed professional , witty and clever explanation.\n\n {}".format(prompt1),
       temperature=0.7,
-      max_tokens=200,
+      max_tokens=600,
       top_p=1,
       frequency_penalty=0,
       presence_penalty=0
